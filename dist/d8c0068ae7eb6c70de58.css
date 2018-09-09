@@ -1,0 +1,225 @@
+.home-page {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  padding-top: 3em;
+}
+
+@media all and (max-width: 468px) {
+  .home-page {
+    flex-direction: column;
+  }
+}
+
+.home-page .home-page-header {
+  align-self: center;
+  text-align: center;
+}
+
+.home-page .tiles-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-height: 75vh;
+  overflow: auto;
+}
+
+/* All of the following are just the variables exposed by the elements that allow customization */
+
+.home-page .tun-search-bar .tun-search-bar__input {
+  --tun-search-bar-input-outline: 2px solid var(--divider);
+  --tun-search-bar-input-background-color: var(--clear);
+
+}
+
+.home-page .tun-search-bar .tun-search-bar__input:focus {
+  --tun-search-bar-input-background-color: var(--white);
+  --tun-search-bar-input-outline: 2px solid var(--dark);
+}
+
+.home-page .tun-tile {
+  /* Available Variables */
+  --tile-height: 140px;
+  --tile-width: 220px;
+  --tile-margin: 1rem;
+  --tile-background-color: var(--light);
+  --tile-font-color: var(--dark);
+  --tun-flex-direction: row;
+  --tun-justify-content: center;
+  --tun-text-align: center;
+  --tun-align-items: center;
+  --tun-font-size: 16px;
+  --tun-padding: 0.5rem;
+  --tun-border: 2px solid var(--accent);
+
+  /* UX Interaction  */
+  --tun-tile-hover-color: var(--primary);
+  --tun-tile-active-color: var(--accent);
+
+  /* Icon Styling */
+  --tile-icon: var(--accent);
+
+  /* Content Styling */
+  --tile-main-padding: 10px;
+  --tile-footer-font-size: 14px;
+}
+
+.home-page
+.tun-tile
+.content {
+  font-weight: 100;
+  margin: 5px;
+  padding: 5px;
+}
+
+.home-page
+.tun-tile
+.content
+.tile-name {
+  text-decoration: underline;
+  color: var(--primary);
+}
+
+.home-page
+.tun-tile
+.content
+.tile-description {
+  color: var(--accent);
+  font-size: 10px;
+  text-align: justify;
+}
+
+.home-page
+.tun-tile
+.footer
+.tile-price {
+  font-weight: 900;
+  color: var(--primary);
+}
+
+.detail-page {
+  padding: 3rem;
+}
+.detail-page .buy-btn {
+  margin-left: 1rem;
+  border-radius: 0;
+  background-color: var(--primary);
+  color: var(--clear);
+  font-size: 20px;
+  border: none;
+  height: 45px;
+  width: 200px;
+}
+
+.detail-page .tun-tile {
+  /* Available Variables */
+  --tile-height: 140px;
+  --tile-width: 220px;
+  --tile-margin: 1rem;
+  --tile-background-color: var(--light);
+  --tile-font-color: var(--dark);
+  --tun-flex-direction: row;
+  --tun-justify-content: center;
+  --tun-text-align: center;
+  --tun-align-items: center;
+  --tun-font-size: 16px;
+  --tun-padding: 0.5rem;
+  --tun-border: 2px solid var(--accent);
+
+  /* UX Interaction  */
+  --tun-tile-hover-color: var(--primary);
+  --tun-tile-active-color: var(--accent);
+
+  /* Icon Styling */
+  --tile-icon: var(--accent);
+
+  /* Content Styling */
+  --tile-main-padding: 10px;
+  --tile-footer-font-size: 14px;
+}
+
+
+
+.detail-page
+.tun-tile
+.content {
+  font-weight: 100;
+  margin: 5px;
+  padding: 5px;
+}
+
+
+
+.detail-page
+.tun-tile
+.content
+.tile-name {
+  text-decoration: underline;
+  color: var(--primary);
+}
+
+
+
+.detail-page
+.tun-tile
+.content
+.tile-description {
+  color: var(--accent);
+  font-size: 10px;
+  text-align: justify;
+}
+
+
+
+.detail-page
+.tun-tile
+.footer
+.tile-price {
+  font-weight: 900;
+  color: var(--primary);
+}
+
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --dark: #0f0f0f;
+  --clear: #f0f0f0;
+
+  --primary: #795548;
+  --accent: #009688;
+  --primary-dark: #5D4037;
+  --primary-light: #D7CCC8;
+  --primary-text: #212121;
+
+  --secondary-text: #757575;
+  --text: #FFFFFF;
+  --divider: #BDBDBD;
+  
+  --info: #00BFA5;
+  --success: #00C853;
+  --warning: #FFD740;
+  --danger: #D50000;
+
+  --font-stack: 'Segoe UI', Lato;
+}
+
+* {
+  font-family: var(--font-stack);
+}
+
+html, body {
+  min-height: 95vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+router-view {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/*# sourceMappingURL=app.3d6be27225f0884e374f.bundle.map*/

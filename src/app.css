@@ -1,0 +1,42 @@
+
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --dark: #0f0f0f;
+  --clear: #f0f0f0;
+
+  --primary: #795548;
+  --accent: #009688;
+  --primary-dark: #5D4037;
+  --primary-light: #D7CCC8;
+  --primary-text: #212121;
+
+  --secondary-text: #757575;
+  --text: #FFFFFF;
+  --divider: #BDBDBD;
+  
+  --info: #00BFA5;
+  --success: #00C853;
+  --warning: #FFD740;
+  --danger: #D50000;
+
+  --font-stack: 'Segoe UI', Lato;
+}
+
+* {
+  font-family: var(--font-stack);
+}
+
+html, body {
+  min-height: 95vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+router-view {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}

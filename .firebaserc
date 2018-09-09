@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "tun-settings-hub"
+  },
+  "targets": {
+    "tun-settings-hub": {
+      "hosting": {
+        "tun-settings-hub-au": [
+          "tun-settings-hub-au"
+        ]
+      }
+    }
+  }
+}

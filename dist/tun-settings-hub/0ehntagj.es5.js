@@ -1,0 +1,2 @@
+/*! Built with http://stenciljs.com */
+TunSettingsHub.loadBundle("0ehntagj",["exports"],function(e){var n=window.TunSettingsHub.h,t=function(){function e(){}return e.prototype.render=function(){return n("h1",null,"404")},Object.defineProperty(e,"is",{get:function(){return"not-found"},enumerable:!0,configurable:!0}),Object.defineProperty(e,"style",{get:function(){return""},enumerable:!0,configurable:!0}),e}();e.NotFound=t,Object.defineProperty(e,"__esModule",{value:!0})});

@@ -1,0 +1,21 @@
+<template>
+  <article class="detail-page">
+    <tun-tile>
+      <header class="header" slot="header">
+        <img src="https://via.placeholder.com/75x75" alt="${tile.title}">
+      </header>
+      <main class="content">
+        <label class="tile-name">
+          ${tile.name}
+        </label> <br>
+        <small class="tile-description">
+          ${tile.description}
+        </small>
+      </main>
+      <footer slot="footer" class="footer">
+        <label class="tile-price">$${tile.price}</label>
+      </footer>
+    </tun-tile>
+    <button class="buy-btn" click.delegate="buy()">Ready to Buy?</button>
+  </article>
+</template>

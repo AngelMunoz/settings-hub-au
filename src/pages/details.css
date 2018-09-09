@@ -1,0 +1,82 @@
+
+.detail-page {
+  padding: 3rem;
+}
+.detail-page .buy-btn {
+  margin-left: 1rem;
+  border-radius: 0;
+  background-color: var(--primary);
+  color: var(--clear);
+  font-size: 20px;
+  border: none;
+  height: 45px;
+  width: 200px;
+}
+
+.detail-page .tun-tile {
+  /* Available Variables */
+  --tile-height: 140px;
+  --tile-width: 220px;
+  --tile-margin: 1rem;
+  --tile-background-color: var(--light);
+  --tile-font-color: var(--dark);
+  --tun-flex-direction: row;
+  --tun-justify-content: center;
+  --tun-text-align: center;
+  --tun-align-items: center;
+  --tun-font-size: 16px;
+  --tun-padding: 0.5rem;
+  --tun-border: 2px solid var(--accent);
+
+  /* UX Interaction  */
+  --tun-tile-hover-color: var(--primary);
+  --tun-tile-active-color: var(--accent);
+
+  /* Icon Styling */
+  --tile-icon: var(--accent);
+
+  /* Content Styling */
+  --tile-main-padding: 10px;
+  --tile-footer-font-size: 14px;
+}
+
+
+
+.detail-page
+.tun-tile
+.content {
+  font-weight: 100;
+  margin: 5px;
+  padding: 5px;
+}
+
+
+
+.detail-page
+.tun-tile
+.content
+.tile-name {
+  text-decoration: underline;
+  color: var(--primary);
+}
+
+
+
+.detail-page
+.tun-tile
+.content
+.tile-description {
+  color: var(--accent);
+  font-size: 10px;
+  text-align: justify;
+}
+
+
+
+.detail-page
+.tun-tile
+.footer
+.tile-price {
+  font-weight: 900;
+  color: var(--primary);
+}

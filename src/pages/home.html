@@ -1,0 +1,30 @@
+<template>
+  <article class="home-page">
+    <header class="home-page-header">
+      <header class="home-page-header">
+        <h1>Ultra Cool Shop!</h1>
+        <span if.bind="searchText" style="color: black;">You Searched for: "${searchText}"</span>
+        <tun-search-bar on-search.delegate="onSearch($event)" placeholder="Find a Product!">
+          </tun-search-box>
+      </header>
+    </header>
+    <section class="tiles-area">
+      <tun-tile repeat.for="tile of tiles" click.delegate="goToDetails(tile)">
+        <header class="header" slot="header">
+          <img src="https://via.placeholder.com/75x75" alt="${tile.title}">
+        </header>
+        <main class="content">
+          <label class="tile-name">
+            ${tile.name}
+          </label> <br>
+          <small class="tile-description">
+            ${tile.description}
+          </small>
+        </main>
+        <footer slot="footer" class="footer">
+          <label class="tile-price">$${tile.price}</label>
+        </footer>
+      </tun-tile>
+    </section>
+  </article>
+</template>
